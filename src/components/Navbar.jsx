@@ -23,9 +23,9 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
                 <div className="container">
-                    <a className="navbar-brand" href="homepage.html">Facegram</a>
+                    <Link to={"/"} className='navbar-brand'>Facegram</Link>
                     <div className="navbar-nav">
-                        <Link className='nav-link' to={"profile/" + username}>@{username}</Link>
+                        <Link className='nav-link' to={"/profile/" + username}>@{username}</Link>
                         <a className="nav-link" style={{ cursor: 'pointer'}} onClick={handleLogout}>Logout</a>
                     </div>
                 </div>
